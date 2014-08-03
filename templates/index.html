@@ -1,0 +1,33 @@
+$def with (form, title)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>$title</title>
+ <link rel="stylesheet" type="text/css" href="/static/main.css">
+<link href="/static/bootstrap.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span4">
+      <img src="/static/rpi.jpg" />
+      
+      </div>
+    <div class="content">
+    <div class="span8">
+      <p>This is an app to control LEDs using Raspberry Pi 
+        <br />
+        by K.Vikraman </p>
+<form class="form" method="post"> 
+        $:form.render()
+        </form>
+       
+    </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
